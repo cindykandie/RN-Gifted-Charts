@@ -1,18 +1,22 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
+import LineGraph from './components/LineGraph';
+import Piechart from './components/PieChart';
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
+      <Text>Graphs and Charts</Text>
       <StatusBar style="auto" />
+      <LineGraph />
+      <Piechart/>
     </View>
   );
 }
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
+    marginVertical: 50,
     backgroundColor: '#fff',
     alignItems: 'center',
     justifyContent: 'center',
